@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main class="main-container">
+            <div class="topbar">
+                <div class="container">
+                    <input id="picker" type="color" value="#ff0000">
+                    <select id="modes">
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome dark</option>
+                        <option value="monochrome-light">Monochrome light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
+                    </select>
+                    <button data-btn="click">Get color scheme</button>
+                </div>
+            </div>
+            <div class="colors" id="colors">
+                <!--COLOR Column -->
+                <div class="color-column">
+                    <div class="rectangle" style="background-color: #ff0000;"></div>
+                    <div class="hex-value">#FF0000</div>
+                </div>
+            </div>
+            <div id="notificationCopyModal" style="display: none;">
+                <div id="modal-content"></div> <!-- for pop up that is copied-->
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
